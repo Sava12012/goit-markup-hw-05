@@ -297,6 +297,10 @@ p {
   align-items: center;
   justify-content: center;
 }
+.team-item-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-icon-a {
   display: flex;
   align-items: center;
