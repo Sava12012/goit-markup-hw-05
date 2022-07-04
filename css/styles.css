@@ -85,6 +85,8 @@ p {
 }
 
 .header-link {
+  position: relative;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -94,6 +96,23 @@ p {
   letter-spacing: 0.02em;
   color: #212121;
   transition: var(--anim-slow);
+}
+
+.header-link::after {
+  content: '';
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  display: none;
+}
+
+.header-link:hover::after {
+  display: block;
 }
 
 .header-group {
@@ -605,8 +624,6 @@ p {
 }
 
 .team-icon-a-f:hover,
-.team-icon-svg-f:hover,
-.team-icon-a-f:focus,
-.team-icon-svg-f:focus {
+.team-icon-a-f:focus {
   background-color: #2196f3;
 }
