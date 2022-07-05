@@ -474,6 +474,7 @@ p {
 .pictures-item:hover .pictures-overlay {
   transform: translateY(0);
 }
+
 .pictures-overlay {
   position: absolute;
   top: 0;
@@ -489,11 +490,13 @@ p {
   backdrop-filter: blur(3px);
   background-color: rgba(33, 150, 243, 0.9);
 }
+
 .pictures-desc {
   color: white;
   font-size: 18px;
   line-height: 1.6;
 }
+
 .pictures-item > .pictures-title-text {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
